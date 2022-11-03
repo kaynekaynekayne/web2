@@ -3,32 +3,36 @@ import {Link} from 'react-router-dom';
 import styled from 'styled-components';
 import {motion} from 'framer-motion';
 import { pageAnimation } from '../style/animation';
-import around from '../img/around.png';
 import map from '../img/map.png';
-import emergency from '../img/emergency.png';
-import game from '../img/game-control.png';
+import emergency from '../img/emergency-call.png';
+import game from '../img/game.png';
 
 const Gallery = () => {
     return (
         <Container>
             <div className="left">
-                <div className='item-2x'></div>
+                <div className='item-2x'>
+                    {/* <h1>PROJECTS</h1> */}
+                </div>
                 <div className='item'></div>
             </div>
             <div className="right">
                 <div className="item">
                     <Link to="/gallery/around">
                         <img src={map} alt="theater-map"/>
+                        <h5>Around</h5>
                     </Link>
                 </div>
                 <div className="item">
                     <Link to="/gallery/travel-call">
                         <img src={emergency} alt="emergency-call"/>
+                        <h5>Travel Emergency Call</h5>
                     </Link>
                 </div>
                 <div className="item">
                     <Link to="/gallery/game">
                         <img src={game} alt="game-control" />
+                        <h5>Play Games</h5>
                     </Link>
                 </div>
             </div>
@@ -56,20 +60,21 @@ const Container=styled.div`
         margin:1rem 0.5rem;
         border-radius: 1rem;
         border:3px solid white;
-        background-color: #fdf8f876;
+        background-color: #fdf8f8;
+        text-align:center;
         
         &:hover{
             cursor:pointer;
         }
         img{
-            width:11rem;
-            height:11rem;
+            width:8rem;
+            height:8rem;
             object-fit:cover;
             transition: all 0.5s ease-in-out;
             border-radius: 1rem;
 
             &:hover{
-                transform: scale(1.15);
+                transform: scale(1.13);
             }
         }
     }
