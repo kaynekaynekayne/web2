@@ -12,7 +12,8 @@ const Gallery = () => {
         <Container>
             <div className="left">
                 <div className='item-2x'>
-                    {/* <h1>PROJECTS</h1> */}
+                    {/* <h1>PRO</h1>
+                    <h1>JECTS</h1> */}
                 </div>
                 <div className='item'></div>
             </div>
@@ -32,7 +33,7 @@ const Gallery = () => {
                 <div className="item">
                     <Link to="/gallery/game">
                         <img src={game} alt="game-control" />
-                        <h5>Play Games</h5>
+                        <h5>Game Rating (임시)</h5>
                     </Link>
                 </div>
             </div>
@@ -41,11 +42,11 @@ const Gallery = () => {
 };
 
 const Container=styled.div`
+    min-height:90vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    height:90vh;
-
+    
     .item-2x{
         width:11rem;
         height:23rem;
@@ -60,7 +61,7 @@ const Container=styled.div`
         margin:1rem 0.5rem;
         border-radius: 1rem;
         border:3px solid white;
-        background-color: #fdf8f8;
+        background-color: #f5f4f4;
         text-align:center;
         
         &:hover{

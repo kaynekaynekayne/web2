@@ -27,11 +27,11 @@ const Nav = () => {
 };
 
 const NavStyle=styled.nav`
-    display:flex;
-    justify-content:flex-end;
-    align-items: center;
     ul{
+        width:100%;
+        padding:0 1rem;  
         display:flex;
+        justify-content:flex-end;
     }
     li{
         width:5rem;
