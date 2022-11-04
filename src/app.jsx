@@ -2,7 +2,6 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Nav from "./components/nav";
 import About from "./pages/about";
 import Around from "./pages/around";
-import Detail from "./pages/detail";
 import Gallery from "./pages/gallery";
 import Game from "./pages/game";
 import TravelCall from "./pages/travel-call";
