@@ -19,21 +19,21 @@ const Gallery = () => {
             </div>
             <div className="right">
                 <div className="item">
-                    <Link to="/gallery/around">
+                    <Link to="/around">
                         <img src={map} alt="theater-map"/>
                         <h5>Around</h5>
                     </Link>
                 </div>
                 <div className="item">
-                    <Link to="/gallery/travel-call">
+                    <Link to="/travel-call">
                         <img src={emergency} alt="emergency-call"/>
                         <h5>Travel Emergency Call</h5>
                     </Link>
                 </div>
                 <div className="item">
-                    <Link to="/gallery/game">
+                    <Link to="/game">
                         <img src={game} alt="game-control" />
-                        <h5>Game Rating (임시)</h5>
+                        <h5>Game Rating Club(임시)</h5>
                     </Link>
                 </div>
             </div>
@@ -53,6 +53,8 @@ const Container=styled.div`
         margin:1rem 0.5rem;
         border-radius: 1rem;
         border:3px solid white;
+        color:whitesmoke;
+        /* background-color: #272727; */
     }
 
     .item{
@@ -61,7 +63,7 @@ const Container=styled.div`
         margin:1rem 0.5rem;
         border-radius: 1rem;
         border:3px solid white;
-        background-color: #f5f4f4;
+        background-color: #f4f4f4;
         text-align:center;
         
         &:hover{

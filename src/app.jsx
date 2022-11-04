@@ -14,9 +14,9 @@ function App() {
         <Nav />
         <Routes>
           <Route path="/" element={<Gallery />}/>
-          <Route path="/gallery/around" element={<Around />}/>
-          <Route path="/gallery/travel-call" element={<TravelCall />}/>
-          <Route path="/gallery/game" element={<Game />}/>
+          <Route path="/around" element={<Around />}/>
+          <Route path="/travel-call" element={<TravelCall />}/>
+          <Route path="/game" element={<Game />}/>
           <Route path="/about" element={<About />}/>
         </Routes>
       </BrowserRouter>

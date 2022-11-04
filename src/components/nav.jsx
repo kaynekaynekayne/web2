@@ -29,7 +29,6 @@ const Nav = () => {
 const NavStyle=styled.nav`
     ul{
         width:100%;
-        padding:0 1rem;  
         display:flex;
         justify-content:flex-end;
     }
@@ -37,7 +36,7 @@ const NavStyle=styled.nav`
         width:5rem;
         height:2rem;
         margin-right:0.5rem;
-        background-color: #d8d8d8;
+        background-color: #cecece;
         color:black;
         text-align: center;
         border-bottom-left-radius:1rem;
