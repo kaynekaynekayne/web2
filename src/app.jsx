@@ -5,6 +5,7 @@ import Around from "./pages/around";
 import Gallery from "./pages/gallery";
 import Game from "./pages/game";
 import TravelCall from "./pages/travel-call";
+import Word from "./pages/word";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/around" element={<Around />}/>
           <Route path="/travel-call" element={<TravelCall />}/>
           <Route path="/game" element={<Game />}/>
+          <Route path="/my-words" element={<Word />}/>
           <Route path="/about" element={<About />}/>
         </Routes>
       </BrowserRouter>

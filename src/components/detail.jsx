@@ -4,7 +4,7 @@ import {BsGithub, BsEyeFill} from 'react-icons/bs';
 import { pageAnimation } from '../style/animation';
 import {motion} from 'framer-motion';
 
-const Detail = ({title,deployURL,githubURL,mainImg,frontend,backend,purpose,description,duration}) => {
+const Detail = ({title,deployURL,githubURL,mainImg,frontend,backend,description,duration}) => {
     return (
         <Container
             variants={pageAnimation}
@@ -29,34 +29,31 @@ const Detail = ({title,deployURL,githubURL,mainImg,frontend,backend,purpose,desc
             </div>
             <div className='btm'>
                 <div>
-                    <h3>프론트엔드</h3>
-                    <div className="line"></div>
-                    <p>{frontend}</p>
-                </div>
-                {backend && 
-                    <div>
-                        <h3>백엔드</h3>
-                        <div className="line"></div>
-                        <p>{backend}</p>
-                    </div>
-                }
-                <div>
-                    <h3>목적</h3>
-                    <div className="line"></div>
-                    <p>{purpose}</p>
-                </div>
-                <div>
-                    <h3>설명</h3>
+                    <h3>Description</h3>
                     <div className="line"></div>
                     <p>
                         {description} 
                     </p>
                 </div>
                 <div>
-                    <h3>소요기간</h3>
+                    <h3>Frontend</h3>
                     <div className="line"></div>
-                    <span>{duration}</span>
+                    <p>{frontend}</p>
                 </div>
+                {backend && 
+                    <div>
+                        <h3>Backend</h3>
+                        <div className="line"></div>
+                        <p>{backend}</p>
+                    </div>
+                }
+                {duration && 
+                    <div>
+                        <h3>Duration</h3>
+                        <div className="line"></div>
+                        <span>{duration}</span>
+                    </div>
+                }
             </div>
         </Container>
     )
@@ -80,7 +77,11 @@ const Container=styled(motion.div)`
             svg{
                 cursor:pointer;
                 margin-left:1.5rem;
-                color:#24273b;
+                color:#36353e;
+                transition:all 0.3s ease;
+                &:hover{
+                    transform: scale(1.1);
+                }
             }
         }
         img{
@@ -89,6 +90,7 @@ const Container=styled(motion.div)`
     }
 
     .btm{
+        background-color: whitesmoke;
         
         .link{
             cursor:pointer;
